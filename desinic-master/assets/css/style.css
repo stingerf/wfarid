@@ -1,16 +1,4 @@
 /*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -1047,4 +1035,745 @@ body {
 
   .footer-brand { grid-column: auto; }
 
+}
+
+/* Style untuk section service */
+.section.service {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.underline {
+  position: relative;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-icon {
+  font-size: 40px;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #3498db;
+}
+
+.card-btn ion-icon {
+  transition: transform 0.3s;
+}
+
+.card-btn:hover ion-icon {
+  transform: translateX(5px);
+}
+
+/* Style untuk button More */
+.more-btn-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.more-btn {
+  display: inline-block;
+  background-color: var(--razzmatazz);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.more-btn:hover{
+  background-color: var(--rajah);
+}
+
+.stats-card{
+  cursor:  default;
+}
+
+/* From Uiverse.io by MikeAndrewDesigner */ 
+.e-card {
+  margin: 100px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  position: relative;
+  width: 240px;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+}
+
+.icon {
+  width: 3em;
+  margin-top: -1em;
+  padding-bottom: 1em;
+}
+
+.infotop {
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 5.6em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 100;
+  position: relative;
+  top: 1em;
+  text-transform: lowercase;
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper-counter{
+  display: flex;
+  grid-template-columns: 3;
+}
+.counter {
+  text-align: center;
+  margin: 20px;
+}
+
+.count {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--razzmatazz);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Buat 3 kolom */
+    gap: 20px; /* Jarak antar kartu */
+    padding: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Responsif: Buat 2 kolom untuk tablet */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsif: Buat 1 kolom untuk mobile */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* From Uiverse.io by Subaashbala */
+  .tombol-hover-more {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tombol-hover-more button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: pink;
+  cursor: pointer;
+  border: 4px solid var(--platinum);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 250ms, transform 250ms, filter 50ms;
+}
+.tombol-hover-more button:hover {
+  transform: translate(2px, 2px);
+}
+.tombol-hover-more button:active {
+  filter: saturate(0.75);
+  opacity: 1;
+}
+.tombol-hover-more button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color:var(--razzmatazz);
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 250ms;
+  color: white;
+}
+.tombol-hover-more button:hover::after {
+  transform: translateX(0);
+}
+.bgContainer {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 100%; 
+  font-size: 2em;
+  padding: 0.3em;
+  padding-left: 4em;
+  padding-right: 4em;
+  font-weight: 600;
+  opacity: 1;
+}
+.bgContainer:hover{
+  color: var(--platinum);
+}
+
+.tombol-hover-more button:hover .arrowContainer::after {
+  transform: translateX(0);
+}
+.tombol-hover-more button:hover .arrowContainer {
+  transform: translateX(5px);
+}
+.tombol-hover-more button:active .arrowContainer {
+  transform: translateX(8px);
+}
+.arrowContainer svg {
+  vertical-align: middle;
+}
+
+/* Layout untuk layar tablet (ukuran medium) */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tablet */
+    gap: 15px;
+  }
+
+  .e-card {
+    padding: 15px;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Layout untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 kolom untuk mobile */
+    gap: 10px;
+  }
+
+  .e-card {
+    padding: 10px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive waves (animasi background pada card) */
+.wave {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #3498db, #8e44ad, #f1c40f);
+  animation: wave 1.5s linear infinite;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
+/* Responsive footer */
+footer {
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Make sure that all fonts and paddings are responsive */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+footer {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.about-us .content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.about-us .content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-us .content p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.about-us .image {
+  flex: 1;
+}
+
+.about-us .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.team {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.team .team-members {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team .team-members .member {
+  text-align: center;
+}
+
+.team .team-members .member img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 150px;
+  height: 150px;
+}
+
+.team .team-members .member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #2d2d2d;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Mengatur font dasar dan margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Gaya untuk header */
+  header {
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-top: 10px;
+  }
+  
+  /* Container untuk tombol */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    background-color: #3498db;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsif untuk perangkat mobile */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    .button {
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    .button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Gaya untuk footer */
+  footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #95a5a6;
+  }
+
+  /* From Uiverse.io by MikeAndrewDesigner */ 
+.e-card {
+  margin: 100px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  position: relative;
+  width: 240px;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+}
+
+.icon {
+  width: 3em;
+  margin-top: -1em;
+  padding-bottom: 1em;
+}
+
+.infotop {
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 5.6em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 100;
+  position: relative;
+  top: 1em;
+  text-transform: lowercase;
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 8000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 10000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 20000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main{
+  display: flex;
+  gap: 3em;
+}
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+}
+
+.e-card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero .reveal-left{
+  text-align: start;
+}
+
+.reveal{
+  text-align: justify;
+}
+
+
+/* ini punya gua 💀💀💀💀 */
+/* FAQ Item Styles */
+.custom-faq-question {
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.custom-faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+/* Hover Effect */
+.custom-faq-question:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-faq-answer {
+  max-height: 0;
+  overflow: scroll;
+  color: black;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 20px;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+.custom-faq-answer p {
+  padding: 15px 0;
+  color: black;
+}
+
+/* Active FAQ */
+.custom-active .custom-faq-answer {
+  max-height: 200px;
+  padding: 20px;
+}
+
+.custom-active .custom-faq-question::after {
+  content: "-";
+  transform: rotate(45deg);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .custom-faq-header {
+    font-size: 20px;
+  }
+  .custom-faq-question {
+    font-size: 16px;
+  }
+  .custom-faq-answer {
+    font-size: 14px;
+  }
+}
+
+/* Pastikan tombol selalu terlihat */
+#more-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#more-button:hover {
+  background-color: #0056b3;
 }

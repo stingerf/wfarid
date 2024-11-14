@@ -54,3 +54,35 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const counters = document.querySelectorAll('.count');
+  const speed = 200; // Kecepatan hitung
+
+  const countUp = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+
+      // Hitung increment
+      const increment = target / speed;
+
+      if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(() => countUp(counter), 20);
+      } else {
+          counter.innerText = target;
+      }
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const counter = entry.target;
+              countUp(counter);
+              observer.unobserve(counter); // Animasi hanya sekali
+          }
+      });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => observer.observe(counter));
+});
